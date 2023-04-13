@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>HTH Account</title>  
+        <link rel="stylesheet" href="hth.css">
+        <link rel="icon" href="favicon.ico" type="image/x-icon">
+        <script src="hth.js"></script>
+    </head>
+
+    <body>
+        <section class="form">
+            <h1>Happy Tails Hotel</h1>
+
+            <form action="https://wp.zybooks.com/form-viewer.php" method="GET">
+
+                <div>
+                    <!-- <label for="firstName" class="required">First Name:</label> -->
+                    <input type="text" id="firstName" name="firstName" placeholder="First Name" required >
+                    <span class="required" title="Required Field"></span>
+                </div>
+
+                <div>
+                    <!-- <label for="lastName" class="required">Last Name:</label> -->
+                    <input type="text" id="lastName" name="lastName" placeholder="Last Name" required >
+                    <span class="required" title="Required Field"></span>
+                </div>
+
+                <div>
+                    <!-- <label for="password" class="required">Password:</label> -->
+                    <input type="password" id="password" name="password" placeholder="Password" required >
+                    <span class="required" title="Required Field"></span>
+                </div>
+
+                <div>
+                    <!-- <label for="id" class="required">ID:</label> -->
+                    <input type="number" id="id" name="id" placeholder="ID Number" maxlength="6" required >
+                    <span class="required" title="Required Field"></span>
+                </div>
+
+                <div>
+                    <!-- <label for="phone" class="required">Phone Number:</label> -->
+                    <input type="text" id="phone" name="phone" placeholder="Phone Number" pattern="[0-9]{3}[\-]|[ ][0-9]{3}[\-]|[ ][0-9]{4}" maxlength="12" required >
+                    <span class="required" title="Required Field"></span>
+                </div>
+                
+                <div>
+                    <!-- <label for="email" class="required">Email:</label> -->
+                    <input type="text" id="email" name="email" placeholder="Email Address" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{3,6}$">
+                    <span id="emailreq" title="Required Field"></span>
+                </div>
+
+                <div>
+                    <input type="checkbox" id="emailConfirm" name="emailConfirm">
+                    <label for="emailConfirm">Send Email Confirmation:</label>
+                </div>
+
+                <div class="transaction">
+                    <!-- <label for="transaction" class="required">Select a Transaction</label> -->
+                    <select name="transaction" id="transaction" required >
+                        
+                        <option id ="default" value="default" disabled selected>Select Transation</option>
+                        <option value="bookStay">Book a Stay</option>
+                        <option value="cancelStay">Cancel a Stay</option>
+                        <option value="request">Request Additional Perks</option>
+                        <option value="cancelPerks">Cancel Perks</option>
+                        <option value="changePerks">Change Perks</option>
+                        <option value="createAccount">Create a New Account</option>
+                    </select>
+                    <span class="required" title="Required Field"></span>
+
+                </div>
+
+                <div>
+                    <button type="button" id="submit">Submit</button>
+                    <button type="button" id="reset">Reset</button>
+                </div>
+                
+                
+                
+            </form>
+        </section>
+        
+
+
+    </body>
+
+
+</html>

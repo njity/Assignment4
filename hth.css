@@ -1,0 +1,164 @@
+* {
+    font-family: "candara","calibri", Arial;
+}
+
+body {
+    width: 90%;
+    height: 100%;
+    background: lightblue;
+    background-image: url("background.jpg");
+    background-position: top;
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+.form {
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 650px;
+    background-color: rgba(0, 0, 0, 0.03);
+    text-align: center;
+    padding: 10px 20px;
+    /* border: 10px solid rgb(232, 71, 71); */
+    border-radius: 200px; 
+    backdrop-filter: blur(2px);
+}
+
+div {
+    width: 500px;
+    margin: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+label {
+    width: 200px;
+    color: rgb(255, 255, 255);
+    margin: 5px;
+    font-size: 15px; 
+    /* background-color: rgba(240, 248, 255, 0.2); */
+    border-radius: 15px;
+    padding: 3px;
+    padding-right: 40px;
+}
+
+input {
+    margin-right: auto;
+    margin-left: auto;
+    width: 300px;
+    height: 30px;
+    border: 3px solid rgba(107, 63, 129, 0);
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0.248);
+    backdrop-filter: blur(5px);
+    padding: 3px 10px;
+    color: white;
+}
+
+input::placeholder {
+    color: rgba(255, 255, 255, 0.83)
+}
+
+input + .required::after {
+    content: "*";
+    color: rgb(255, 30, 0);
+    position: absolute; 
+    margin: 11px 0px 0px -20px; 
+    font-size: 17px; 
+    padding: 1px 5px 0 0;
+    /* font-family: sans-serif; */
+}
+
+input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
+    display: none;
+}
+
+select + .required::after  {
+    content: "*";
+    color: rgb(255, 30, 0);
+    position: absolute; 
+    margin: 11px 10px 0px -29px; 
+    font-size: 17px; 
+    padding: 1px 5px 10px 0;
+    /* font-family: sans-serif; */
+}
+
+input:hover, input:focus {
+    background-color: rgba(22, 22, 22, 0.467);
+    backdrop-filter: blur(20px);
+}
+
+input:focus {
+    border:1px solid #00000000;
+    outline: none;
+    -webkit-box-shadow: 0px 0px 5px  #4D90FE00;
+    box-shadow: 0px 0px 5px  #4D90FE00;
+}
+
+input[type="checkbox"] {
+    backdrop-filter: none;
+    width: 30px;
+    margin-right: 90px;
+
+    float: right;
+
+}
+
+h1 {
+    text-align: center;
+    color: white;
+    font-size: 40px;
+    font-weight: 300;
+    /* text-shadow: 2px 2px black; */
+    margin-bottom: 90px;
+    margin-top: 80px;
+}
+
+label[for="emailConfirm"] {
+    float: left;
+    margin-left: 70px;
+    margin-right: 4;
+
+}
+
+button {
+    width: 150px;
+    height: 40px;
+    margin: 0px 5px;
+    background-color: rgba(255, 118, 150, 0.485);
+    backdrop-filter: blur(5px);
+    border-radius: 20px;
+    border-style: none;
+
+}
+
+button:hover, select:hover {
+    background-color: rgba(227, 70, 106, 0.631);
+}
+
+button:active {
+    transform: translateY(2px);
+}
+
+select {
+    width: 300px;
+    height: 40px;
+    padding: 5px, 25px;
+    border-radius: 20px;
+    background-color: rgba(255, 118, 150, 0.485);
+}
+
+option { 
+    margin-left: 30px;
+    padding: 10px, 25px;
+}
+
+.transaction {
+    display: inline-block;
+    margin-bottom: 5px;
+}
