@@ -185,7 +185,7 @@ function validateForm() {
 
 
 function verifyForm() {
-    alert("Success, let's verify now");
+    document.getElementById("loginForm").submit();
 }
 
 
