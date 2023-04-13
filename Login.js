@@ -185,6 +185,7 @@ function validateForm() {
 
 
 function verifyForm() {
+    alert("submitted");
     document.getElementById("loginForm").submit();
 }
 
