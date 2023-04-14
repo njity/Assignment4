@@ -29,7 +29,7 @@ function domLoaded() {
     email = document.getElementById("email");
     checkbox = document.getElementById("emailConfirm");
     transaction = document.getElementById("transaction");
-    submit = document.getElementById("submit");
+    submit = document.getElementById("loginForm");
     reset = document.getElementById("reset");
     emailreq = document.getElementById("emailreq");
     
@@ -50,7 +50,13 @@ function domLoaded() {
 
     checkbox.addEventListener("click", checkboxClicked);
 
-    submit.addEventListener("click", submitForm);
+    submit.addEventListener("submit", (e)=> {
+        if (transaction.value == "default") {
+            alert("Please select a transaction.");
+            transaction.focus();
+            e.preventDefault();
+        }
+    });
 
     reset.addEventListener("click", resetForm);
 
@@ -177,20 +183,6 @@ function checkboxClicked() {
     }
 }
 
-function submitForm() {
-    if (validateForm()) {
-        return true;
-    }
-}
-
-function validateForm() {
-    if (transaction.value == "default") {
-        alert("Please select a transaction.");
-        transaction.focus();
-        return false;
-    }
-    return true;
-}
 
 
 
