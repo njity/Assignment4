@@ -7,6 +7,16 @@
         <script src="reservation.js"></script>
     </head>
 
+    <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="searchAccount.php">Search Account</a></li>
+        <li><a href="verifyOwner.php">Book Reservation</a></li>
+        <li><a href="requestPerks.php">Request Perks</a></li>
+        <li><a href="updatePerks.php">Update Perks</a></li>
+        <li><a href="cancelRes.php">Cancel Reservation</a></li>
+        <li><a href="cancelPerks.php">Create New Accounts</a></li>
+    </ul>
+
     <?php
         if ($_SERVER["REQUEST_METHOD"] == "POST") {
             include "db.php";

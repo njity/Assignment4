@@ -51,6 +51,7 @@
                 $_SESSION["rLN"] = $lName;
                 $_SESSION["rID"] = $id;
                 $_SESSION["rPASS"] = $id;
+                
                 if ($ec) {
                     $_SESSION["rEMAIL"] = $email;
                 }

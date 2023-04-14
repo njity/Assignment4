@@ -162,3 +162,49 @@ option {
     display: inline-block;
     margin-bottom: 5px;
 }
+
+tr:nth-child(odd){
+    background-color: #fcacf272;
+}
+
+tr {
+    margin: 5px;
+}
+
+td {
+    border: solid 1px #0000002e;
+    border-style: none solid solid none;
+    padding: 10px;
+    margin: 2px;
+}
+
+table {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgba(0, 0, 0, 0.165);
+    border-collapse: separate;
+    border-spacing: 2px;
+
+}
+
+.content {
+    width: 90%;
+    height: 90%;
+    backdrop-filter: blur(5px);
+    border-radius: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #ac00b1;
+}
+
+li {
+    display: inline;
+  }
