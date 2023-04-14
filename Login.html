@@ -4,48 +4,42 @@
         <title>HTH Account</title>  
         <link rel="stylesheet" href="hth.css">
         <link rel="icon" href="favicon.ico" type="image/x-icon">
-        <script src="hth.js"></script>
+        <script src="login.js"></script>
     </head>
 
     <body>
         <section class="form">
             <h1>Happy Tails Hotel</h1>
-
-            <form action="https://wp.zybooks.com/form-viewer.php" method="GET">
+            
+            <form action="searchAccount.php" method="POST" id="loginForm">
 
                 <div>
-                    <!-- <label for="firstName" class="required">First Name:</label> -->
-                    <input type="text" id="firstName" name="firstName" placeholder="First Name" required >
+                    <input type="text" id="firstName" name="firstName" placeholder="First Name">
                     <span class="required" title="Required Field"></span>
                 </div>
 
                 <div>
-                    <!-- <label for="lastName" class="required">Last Name:</label> -->
-                    <input type="text" id="lastName" name="lastName" placeholder="Last Name" required >
+                    <input type="text" id="lastName" name="lastName" placeholder="Last Name">
                     <span class="required" title="Required Field"></span>
                 </div>
 
                 <div>
-                    <!-- <label for="password" class="required">Password:</label> -->
-                    <input type="password" id="password" name="password" placeholder="Password" required >
+                    <input type="password" id="password" name="password" placeholder="Password" >
                     <span class="required" title="Required Field"></span>
                 </div>
 
                 <div>
-                    <!-- <label for="id" class="required">ID:</label> -->
-                    <input type="number" id="id" name="id" placeholder="ID Number" maxlength="6" required >
+                    <input type="text" id="id" name="id" placeholder="ID Number">
                     <span class="required" title="Required Field"></span>
                 </div>
 
                 <div>
-                    <!-- <label for="phone" class="required">Phone Number:</label> -->
-                    <input type="text" id="phone" name="phone" placeholder="Phone Number" pattern="[0-9]{3}[\-]|[ ][0-9]{3}[\-]|[ ][0-9]{4}" maxlength="12" required >
+                    <input type="text" id="phone" name="phone" placeholder="Phone Number">
                     <span class="required" title="Required Field"></span>
                 </div>
                 
                 <div>
-                    <!-- <label for="email" class="required">Email:</label> -->
-                    <input type="text" id="email" name="email" placeholder="Email Address" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{3,6}$">
+                    <input type="text" id="email" name="email" placeholder="Email Address" >
                     <span id="emailreq" title="Required Field"></span>
                 </div>
 
@@ -55,13 +49,13 @@
                 </div>
 
                 <div class="transaction">
-                    <!-- <label for="transaction" class="required">Select a Transaction</label> -->
                     <select name="transaction" id="transaction" required >
                         
                         <option id ="default" value="default" disabled selected>Select Transation</option>
+                        <option value="search">Search Account</option>
                         <option value="bookStay">Book a Stay</option>
                         <option value="cancelStay">Cancel a Stay</option>
-                        <option value="request">Request Additional Perks</option>
+                        <option value="request">Request Perks</option>
                         <option value="cancelPerks">Cancel Perks</option>
                         <option value="changePerks">Change Perks</option>
                         <option value="createAccount">Create a New Account</option>
@@ -71,7 +65,7 @@
                 </div>
 
                 <div>
-                    <button type="button" id="submit">Submit</button>
+                    <button type="submit" id="submit">Submit</button>
                     <button type="button" id="reset">Reset</button>
                 </div>
                 
