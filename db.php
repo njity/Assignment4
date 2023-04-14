@@ -1,5 +1,6 @@
 <?php
     //Makes DB connection
+    ini_set('display_errors', 1);
     $servername = "sql1.njit.edu";
     $username = "ny79";
     $password = "Not1\$ecure?!bad";

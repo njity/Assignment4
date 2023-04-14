@@ -65,6 +65,7 @@
                     case "cancelStay":
                         break;
                     case "request":
+                        header("Location: requestPerks.php");
                         break;
                     case "cancelPerks":
                         break;
