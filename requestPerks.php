@@ -15,7 +15,7 @@
             $perks = $_POST["perks"];
             $resID = $_POST["id"];
             
-            $query = "SELECT * FROM reservation WHERE stayID = '$resID'";
+            $query = "SELECT * FROM reservation WHERE stayId = '$resID'";
 
             $result = $con->query($query);
 
@@ -32,7 +32,7 @@
             } else {
                 echo "
                 <script>
-                    if (!confirm(\"Are you sure you want to request perks for your pet?\") {
+                    if (!confirm(\"Are you sure you want to request perks for your pet?\")) {
                         window.location.replace(\"requestPerks.php\");
                     }
                 </script>";

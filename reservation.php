@@ -27,7 +27,7 @@
             while (!$unique) {
                 $num = rand(1, 999999);
 
-                $query = "SELECT * FROM reservation WHERE stayID = '$num'";
+                $query = "SELECT * FROM reservation WHERE stayId = '$num'";
                 
                 $result = $con->query($query);
 
@@ -54,8 +54,8 @@
                 echo "
                 <script>
                     alert(\"Reservation Has Been Booked\");
+                    window.location.replace(\"login.php\");
                 </script>";
-                header("Location: login.php");
             }
 
             

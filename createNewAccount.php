@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>HTH Login</title>  
+        <title>HTH Create New Account</title>  
         <link rel="stylesheet" href="hth.css">
         <link rel="icon" href="favicon.ico" type="image/x-icon">
         <script src="login.js"></script>
