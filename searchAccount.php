@@ -1,10 +1,9 @@
 <?php
     include "db.php";
-    include "verify.php";
 
-    verify($_POST);
+    session_start();
 
-    $id = $_POST["id"];
+    $id = $_SESSION["rID"];
 
     $query = "SELECT 
                 receptionist.firstName,
