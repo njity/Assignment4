@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>HTH Verification</title>  
+        <title>HTH Reservation</title>  
         <link rel="stylesheet" href="hth.css">
         <link rel="icon" href="favicon.ico" type="image/x-icon">
     </head>
@@ -18,12 +18,10 @@
                         *
                       FROM petOwner
                       WHERE
-                        firstName = '$fName' AND
-                        lastName = '$lName' AND
+                        firstName = '$fName',
+                        lastName = '$lName',
                         id = '$id'
             ";
-
-            $result = $con->query($query);
 
             if (!$result) {
                 die("Error executing query: ($con->errno) $con->error<br>SQL = $query");
@@ -47,21 +45,31 @@
 
     <body>
         <section class="form">
-            <h1>Pet Owner Verification Form</h1>
+            <h1>Reservation Form</h1>
             
-            <form action="verifyOwner.php" method="POST" id="loginForm">
+            <form action="reservation.php" method="POST" id="loginForm">
                 <div>
-                    <input type="text" id="firstName" name="firstName" placeholder="First Name">
+                    <input type="date" id="checkOut" name="checkIn" placeholder="Check In Date">
                     <span class="required" title="Required Field"></span>
                 </div>
 
                 <div>
-                    <input type="text" id="lastName" name="lastName" placeholder="Last Name">
+                    <input type="date" id="checkOut" name="checkOut" placeholder="Check Out Date">
                     <span class="required" title="Required Field"></span>
                 </div>
 
                 <div>
                     <input type="text" id="id" name="id" placeholder="Pet Owner ID" >
+                    <span class="required" title="Required Field"></span>
+                </div>
+
+                <div>
+                    <input type="text" id="address" name="address" placeholder="Address">
+                    <span class="required" title="Required Field"></span>
+                </div>
+
+                <div>
+                    <input type="text" id="phone" name="phone" placeholder="Phone Number">
                     <span class="required" title="Required Field"></span>
                 </div>
 
