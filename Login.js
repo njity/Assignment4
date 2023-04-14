@@ -45,6 +45,8 @@ function domLoaded() {
 
     reset.addEventListener("click", resetForm);
 
+    transaction.addEventListener("change", setForm)
+
 }
 
 alphaOnly = /[^A-Za-z]/
@@ -181,6 +183,27 @@ function validateForm() {
         return false;
     }
     return true;
+}
+
+function setForm() {
+    let t = transaction.value;
+    let form = document.getElementById("loginForm");
+
+    if (t == "search") {
+        form.setAttribute("action", "searchAccount.php");
+    } else if (t == "bookStay") {
+        form.setAttribute("action", "bookStay.php");
+    } else if (t == "cancelStay") {
+        form.setAttribute("action", "cancelStay.php");
+    } else if (t == "request") {
+        form.setAttribute("action", "request.php");
+    } else if (t == "cancelPerks") {
+        form.setAttribute("action", "cancelPerks.php");
+    } else if (t == "changePerks") {
+        form.setAttribute("action", "changePerks.php");
+    } else if (t == "createAccount") {
+        form.setAttribute("action", "createAccount.php");
+    }
 }
 
 
