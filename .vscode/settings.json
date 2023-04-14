@@ -1,0 +1,5 @@
+{
+    "open-php-html-js-in-browser.selectedBrowser": "Chrome",
+    "open-php-html-js-in-browser.customUrlToOpen": "http://localhost/${relativeDirnameDocumentRoot}/${fileBasename}",
+    "open-php-html-js-in-browser.documentRootFolder": "C:\\Users\\nyong\\xampp\\htdocs"
+}

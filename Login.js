@@ -170,7 +170,7 @@ function checkboxClicked() {
 
 function submitForm() {
     if (validateForm()) {
-        verifyForm();
+        return true;
     }
 }
 
@@ -184,10 +184,6 @@ function validateForm() {
 }
 
 
-function verifyForm() {
-    alert("submitted");
-    document.getElementById("loginForm").submit();
-}
 
 
 function resetForm() {
