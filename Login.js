@@ -34,11 +34,11 @@ function domLoaded() {
     emailreq = document.getElementById("emailreq");
     
     //Temp
-    fn.value = "William";
-    ln.value = "Davis";
-    pass.value = "F1r3w@llP@ss#";
-    id.value = "123456";
-    phone.value = "617-234-5678";
+    // fn.value = "William";
+    // ln.value = "Davis";
+    // pass.value = "F1r3w@llP@ss#";
+    // id.value = "123456";
+    // phone.value = "617-234-5678";
     
 
 

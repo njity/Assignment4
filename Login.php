@@ -12,6 +12,8 @@
         if ($_SERVER["REQUEST_METHOD"] == "POST") {
             include "db.php";
 
+            session_destroy();
+
             $fName = $_POST["firstName"];
             $lName = $_POST["lastName"];
             $id = $_POST["id"];
